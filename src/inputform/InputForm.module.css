@@ -1,0 +1,75 @@
+.block{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../../public/images/authorization.jpg);
+    background-position: center;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+    padding: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.mail,
+.password{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+input{
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(168 168 245);
+    margin-top: 20px;
+    padding: 5px;
+    width: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    .mail,
+    .password{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    input{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    button{
+        margin-top: 10px;
+    }
+
+    h1{margin: 0;}
+
+}
